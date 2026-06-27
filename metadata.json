@@ -1,0 +1,6 @@
+{
+  "name": "AI Website Analyzer",
+  "description": "Analyze website SEO, performance, accessibility, and security with detailed reports and AI-powered recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
