@@ -1,27 +1,75 @@
-# Vantage AI Website Auditor
+<div align="center">
 
-Vantage AI is an enterprise-grade website auditing and optimization platform. It combines raw technical performance crawling (Lighthouse and W3C WCAG emulation) with intelligent, LLM-powered optimization suggestions. Web developers can run real-time semantic diagnostics, review speed benchmarks, inspect secure headers, and get line-by-line code recommendations to fix accessibility and performance bottle-necks.
+<img src="./public/vantage_ai_banner.png" alt="Vantage AI Header Banner" width="100%" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin-bottom: 25px;" />
+
+# ⚡ Vantage AI — Website Auditor
+
+[![Platform](https://img.shields.io/badge/Vantage--AI-Website--Auditor-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](#)
+[![Version](https://img.shields.io/badge/Version-2.1-9b59b6?style=for-the-badge)](#)
+[![License](https://img.shields.io/badge/License-MIT-emerald?style=for-the-badge)](#)
+
+<p align="center">
+  <b>Enterprise-grade website crawling, technical page vitals assessment, secure header audits, and real-time AI code refactoring recommendations.</b>
+</p>
+
+---
+
+[🚀 Quick Start](#-getting-started) • [🌟 Core Features](#-core-features) • [🛠️ Technical Stack](#%EF%B8%8F-technical-stack) • [📁 Directory Architecture](#-project-architecture) • [👨‍💻 Contact Creator](#-created--authored-by)
+
+</div>
 
 ---
 
 ## 🌟 Core Features
 
-- ⚡ **Real-Time Crawling & Audits**: Validates URLs in real-time, parsing HTML structure, document tag ratios, and layout elements.
-- 📊 **Performance & Vitals Dashboard**: Compiles Core Web Vitals like First Contentful Paint (FCP) and Largest Contentful Paint (LCP) across desktop, tablet, and mobile viewports.
-- 🔒 **Security Assessment Check**: Audits target websites for active SSL/TLS, secure response parameters (HSTS, CSP), and cross-origin security vectors.
-- 🧠 **AI-Powered Code Refactoring**: Offers direct, copy-pasteable line-by-line solutions using generative recommendations.
-- 💾 **Scan History Database**: A chronological crawler history checklist saved in local storage to audit and compare metrics overtime.
-- 📤 **Multi-Format Export Engine**: Exports reports directly to formatted PDF documents, raw JSON, or clean CSV summaries.
-- 🌗 **Adaptive Design System**: Built with modern Tailwind CSS v4 featuring responsive grids, glassmorphism, and a high-contrast dark/light mode toggle.
+<table width="100%">
+  <tr>
+    <td width="50%">
+      <h3>⚡ Real-Time Crawling & Audits</h3>
+      <p>Instantly crawl target URLs to extract DOM headers, check page indexing rules, and validate responsive element constraints.</p>
+    </td>
+    <td width="50%">
+      <h3>📊 Multi-Viewport Performance Vitals</h3>
+      <p>Review metrics like First Contentful Paint (FCP) and Largest Contentful Paint (LCP) simulated across Desktop, Tablet, and Mobile devices.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>🔒 Security Telemetry Assessment</h3>
+      <p>Analyze secure communication layers (SSL/TLS checks) and HTTP response security parameters (HSTS, CSP, X-Frame-Options).</p>
+    </td>
+    <td width="50%">
+      <h3>🧠 AI Line-by-Line Refactoring</h3>
+      <p>Get immediate, drop-in React/HTML replacements powered by recommendations logic to patch code vulnerabilities.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>💾 Chronological Scan Databases</h3>
+      <p>Track audit history and score metrics chronologically using a local storage system to review improvements over time.</p>
+    </td>
+    <td width="50%">
+      <h3>📤 Document Generation & Export</h3>
+      <p>Generate clean, formatted PDF reports, raw JSON audits, or CSV index lists with a single click.</p>
+    </td>
+  </tr>
+</table>
 
 ---
 
 ## 🛠️ Technical Stack
 
-- **Frontend**: React 19, TypeScript, Tailwind CSS v4, Lucide React, Recharts (Radar/Bar charts), Framer Motion.
-- **Backend**: Node.js, Express, TSX, SQLite-mock DB layers, PDFKit (PDF export).
-- **Core Integrations**: Gemini API (intelligent code correction models).
-- **Tooling**: Vite (development server & HMR), ESBuild (server bundler).
+<div align="center">
+
+| Core Area | Technologies Used |
+| :--- | :--- |
+| **Frontend UI** | ![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_v4-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white) ![Lucide React](https://img.shields.io/badge/Lucide_Icons-6366f1?style=flat-square) |
+| **Data Visuals** | ![Recharts](https://img.shields.io/badge/Recharts-3498db?style=flat-square) ![Framer Motion](https://img.shields.io/badge/Framer_Motion-F22F46?style=flat-square&logo=framer&logoColor=white) |
+| **Backend API** | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) ![TSX Runner](https://img.shields.io/badge/TSX_Runner-e74c3c?style=flat-square) |
+| **AI Processing** | ![Google Gemini](https://img.shields.io/badge/Google_Gemini_API-8E44AD?style=flat-square&logo=google-gemini&logoColor=white) |
+| **Document Export** | ![PDFKit](https://img.shields.io/badge/PDFKit-e67e22?style=flat-square) |
+
+</div>
 
 ---
 
@@ -29,69 +77,80 @@ Vantage AI is an enterprise-grade website auditing and optimization platform. It
 
 ```
 ai-website-analyzer/
-├── public/                 # Static assets (including profile avatars)
-├── src/                    # Frontend source directory
-│   ├── components/         # UI Elements (Dashboards, Issue Reports, History List)
-│   │   ├── AdminPanel.tsx  # System health metrics & server logs
-│   │   ├── HistoryList.tsx # Crawl database history records
-│   │   ├── IssueReport.tsx # AI line-by-line recommendations
-│   │   └── ReportDashboard.tsx # Comprehensive analytics & charts
-│   ├── App.tsx             # Main client page layout & state orchestrator
-│   ├── index.css           # Global stylesheets & custom design keyframes
-│   ├── types.ts            # Audit, History, and Profile type declarations
-│   └── main.tsx            # React DOM mounting entry point
-├── server/                 # Express backend source directory
-│   ├── db.ts               # In-memory mock database & log records
-│   ├── analyzer.ts         # Audit algorithms (SEO, performance, security metrics)
-│   └── generators.ts       # CSV, JSON, and PDF generation engines
-├── server.ts               # Node/Express API server controller
-├── vite.config.ts          # Vite asset pipeline configuration
-└── README.md               # Project documentation
+├── public/                 # Static assets & profile avatar resources
+│   ├── vantage_ai_banner.png  # Premium header graphics banner
+├── src/                    # Frontend source code
+│   ├── components/         # Dashboard & audit result panels
+│   │   ├── AdminPanel.tsx  # Server health telemetry UI
+│   │   ├── HistoryList.tsx # Audit history database records
+│   │   ├── IssueReport.tsx # Line-by-line recommendation code blocks
+│   │   └── ReportDashboard.tsx # Comprehensive speed/security analytics
+│   ├── App.tsx             # Theme states & tab controller
+│   ├── index.css           # Global glassmorphism style sheet & keyframes
+│   ├── types.ts            # Project model declarations
+│   └── main.tsx            # DOM node injection
+├── server/                 # Express REST endpoint modules
+│   ├── db.ts               # Local SQLite-mock database
+│   ├── analyzer.ts         # Technical auditing scripts
+│   └── generators.ts       # PDF, JSON, and CSV export layout compilers
+├── server.ts               # Server bootstrap entry point
+├── vite.config.ts          # Build pipeline and HMR configurations
+└── README.md               # Visual documentation
 ```
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Node.js (v18 or higher recommended)
-- npm or yarn package manager
+### 📋 Prerequisites
+- **Node.js** v18+ installed on your local environment.
+- Active **Google Gemini API Key** for optimization recommendation diagnostics.
 
-### 1. Installation
-Clone the repository and install all node modules:
-```bash
-npm install
-```
+### ⚙️ Installation & Launch
 
-### 2. Configure Environment Variables
-Create a `.env` or `.env.local` file in the root directory and specify your Gemini API key:
-```env
-GEMINI_API_KEY=your_gemini_api_key_here
-```
-
-### 3. Run Development Server
-Launch the development server running Express and Vite hot reloading:
-```bash
-npm run dev
-```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+1. **Install Modules**
+   ```bash
+   npm install
+   ```
+2. **Environment Variables**
+   Create a `.env.local` file in the root folder:
+   ```env
+   GEMINI_API_KEY=your_google_gemini_api_key
+   ```
+3. **Boot Development Environment**
+   ```bash
+   npm run dev
+   ```
+   *Vantage AI will boot automatically on [http://localhost:3000](http://localhost:3000).*
 
 ---
 
 ## 👨‍💻 Created & Authored By
 
-Vantage AI was designed, architected, and built from scratch by:
-
-### **Aditya Kumar Sahoo**
-*Platform Owner & Chief Architect*
-
-- **Location**: Bhubaneswar, Odisha, India
-- **Core Focus**: React, TypeScript, and Intelligent Recommendation Architectures
-- **GitHub**: [Adityakumarsahoo](https://github.com/Adityakumarsahoo)
-- **Portfolio**: [aditya-spark.vercel.app](https://aditya-spark.vercel.app)
-- **Contact Email**: [toadityakumarsahoo@gmail.com](mailto:toadityakumarsahoo@gmail.com)
+<div align="center">
+<table border="0">
+  <tr>
+    <td align="center" width="220">
+      <img src="./public/input_file_1.png" alt="Aditya Kumar Sahoo" width="130" style="border-radius: 50%; border: 3px solid #6366f1; box-shadow: 0 4px 15px rgba(99,102,241,0.3);" />
+      <br />
+      <b>Aditya Kumar Sahoo</b>
+      <br />
+      <sub>Platform Owner & Lead Architect</sub>
+    </td>
+    <td valign="middle" style="padding-left: 20px;">
+      <p>🚀 <b>Core Competence</b>: High-performance React viewports, TypeScript architectures, responsive web telemetry, and LLM-powered recommendations nodes.</p>
+      <p>📍 <b>Based In</b>: Bhubaneswar, Odisha, India</p>
+      <p>
+        <a href="https://github.com/Adityakumarsahoo"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" /></a>
+        <a href="mailto:toadityakumarsahoo@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" /></a>
+        <a href="https://aditya-spark.vercel.app"><img src="https://img.shields.io/badge/Portfolio-6366f1?style=flat-square&logo=vercel&logoColor=white" /></a>
+      </p>
+    </td>
+  </tr>
+</table>
+</div>
 
 ---
 
 ## 📄 License
-This project is open-source. Calculated audit scores correspond to simulated PageSpeed Insights and W3C auditing algorithms.
+Calculated audit scores emulate PageSpeed Insights and W3C auditing parameters. Built open-source for personal developer utility audits.
