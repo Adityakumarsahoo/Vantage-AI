@@ -93,7 +93,7 @@ export default function ReportDashboard({
         <div className="flex flex-wrap items-center gap-2 pl-2 lg:pl-0">
           <a
             id="export-pdf-btn"
-            href={`/api/download/pdf/${report.id}`}
+            href={`${import.meta.env.VITE_API_URL || ''}/api/download/pdf/${report.id}`}
             download
             className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold border hover:scale-[1.01] transition-all shadow-sm ${
               isDark ? 'bg-[#16161c] border-slate-800 text-indigo-400 hover:text-indigo-300 hover:border-slate-700' : 'bg-white border-slate-200 text-indigo-600 hover:bg-slate-50'
@@ -105,7 +105,7 @@ export default function ReportDashboard({
 
           <a
             id="export-docx-btn"
-            href={`/api/download/docx/${report.id}`}
+            href={`${import.meta.env.VITE_API_URL || ''}/api/download/docx/${report.id}`}
             download
             className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold border hover:scale-[1.01] transition-all shadow-sm ${
               isDark ? 'bg-[#16161c] border-slate-800 text-blue-400 hover:text-blue-300 hover:border-slate-700' : 'bg-white border-slate-200 text-blue-600 hover:bg-slate-50'
@@ -117,7 +117,7 @@ export default function ReportDashboard({
 
           <a
             id="export-excel-btn"
-            href={`/api/download/excel/${report.id}`}
+            href={`${import.meta.env.VITE_API_URL || ''}/api/download/excel/${report.id}`}
             download
             className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold border hover:scale-[1.01] transition-all shadow-sm ${
               isDark ? 'bg-[#16161c] border-slate-800 text-emerald-400 hover:text-emerald-300 hover:border-slate-700' : 'bg-white border-slate-200 text-emerald-600 hover:bg-slate-50'
@@ -129,7 +129,7 @@ export default function ReportDashboard({
 
           <a
             id="export-csv-btn"
-            href={`/api/download/csv/${report.id}`}
+            href={`${import.meta.env.VITE_API_URL || ''}/api/download/csv/${report.id}`}
             download
             className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold border hover:scale-[1.01] transition-all shadow-sm ${
               isDark ? 'bg-[#16161c] border-slate-800 text-amber-400 hover:text-amber-300 hover:border-slate-700' : 'bg-white border-slate-200 text-amber-600 hover:bg-slate-50'
@@ -141,7 +141,7 @@ export default function ReportDashboard({
 
           <a
             id="export-json-btn"
-            href={`/api/download/json/${report.id}`}
+            href={`${import.meta.env.VITE_API_URL || ''}/api/download/json/${report.id}`}
             download
             className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold border hover:scale-[1.01] transition-all shadow-sm ${
               isDark ? 'bg-[#16161c] border-slate-800 text-pink-400 hover:text-pink-300 hover:border-slate-700' : 'bg-white border-slate-200 text-pink-600 hover:bg-slate-50'
