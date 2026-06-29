@@ -1,8 +1,12 @@
 import express from 'express';
 import path from 'path';
 import cors from 'cors';
+import dotenv from 'dotenv';
 import router from './routes';
 import { logger } from './middleware/logger';
+
+// Load environment variables
+dotenv.config();
 
 const PORT = process.env.PORT || 3000;
 
