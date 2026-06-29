@@ -10,32 +10,31 @@ dotenv.config();
 
 const PORT = process.env.PORT || 3000;
 
-async function startServer() {
-  const app = express();
-  
-  // Enable CORS configuration
-  app.use(cors());
-  
-  app.use(express.json());
-  app.use(logger);
+const app = express();
 
-  // Mount API router
-  app.use('/api', router);
+// Enable CORS configuration
+app.use(cors());
 
-  // Serve static files in production fallback
-  if (process.env.NODE_ENV === 'production') {
-    const distPath = path.join(process.cwd(), '../frontend/dist');
-    app.use(express.static(distPath));
-    app.get('*', (req, res) => {
-      res.sendFile(path.join(distPath, 'index.html'));
-    });
-  }
+app.use(express.json());
+app.use(logger);
 
+// Mount API router
+app.use('/api', router);
+
+// Serve static files in production fallback (only if not on Vercel serverless)
+if (process.env.NODE_ENV === 'production' && !process.env.VERCEL) {
+  const distPath = path.join(process.cwd(), '../frontend/dist');
+  app.use(express.static(distPath));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(distPath, 'index.html'));
+  });
+}
+
+// Only listen if not running in a serverless environment (like Vercel)
+if (!process.env.VERCEL) {
   app.listen(Number(PORT), '0.0.0.0', () => {
     console.log(`[SYSTEM STARTED] Server running on http://localhost:${PORT}`);
   });
 }
 
-startServer().catch((error) => {
-  console.error('Failed to start server:', error);
-});
+export default app;
