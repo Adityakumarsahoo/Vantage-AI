@@ -18,8 +18,9 @@ app.use(cors());
 app.use(express.json());
 app.use(logger);
 
-// Mount API router
+// Mount API router (covers both prefixed and stripped routes on Vercel)
 app.use('/api', router);
+app.use('/', router);
 
 // Serve static files in production fallback (only if not on Vercel serverless)
 if (process.env.NODE_ENV === 'production' && !process.env.VERCEL) {
