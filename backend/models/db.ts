@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { ReportData, UserProfile } from '../src/types';
+import { ReportData, UserProfile } from '../types';
 
 const DB_FILE = path.join(process.cwd(), 'db_data.json');
 
@@ -15,7 +15,7 @@ interface ActivityLog {
 
 interface DatabaseSchema {
   users: UserProfile[];
-  passwords: Record<string, string>; // userId -> hash/password (plaintext or simple hash since this is a self-contained local deployment)
+  passwords: Record<string, string>; // userId -> hash/password
   reports: ReportData[];
   logs: ActivityLog[];
 }
@@ -105,7 +105,6 @@ export const db = {
 
   getReports(userId?: string): ReportData[] {
     const database = readDb();
-    // For now, allow everyone to see reports or filter if userId is supplied
     return database.reports;
   },
 
@@ -115,7 +114,6 @@ export const db = {
 
   saveReport(report: ReportData, userId?: string, email?: string) {
     const database = readDb();
-    // Remove if existing
     database.reports = database.reports.filter(r => r.id !== report.id);
     database.reports.unshift(report);
     writeDb(database);
@@ -150,7 +148,6 @@ export const db = {
       details
     };
     database.logs.unshift(newLog);
-    // Limit to 100 logs
     if (database.logs.length > 100) {
       database.logs = database.logs.slice(0, 100);
     }

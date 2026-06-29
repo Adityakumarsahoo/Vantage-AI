@@ -1,5 +1,5 @@
 import PDFDocument from 'pdfkit';
-import { ReportData } from '../src/types';
+import { ReportData } from '../types';
 
 // PDF Report Generator using pdfkit
 export function generatePDF(report: ReportData, res: any) {
@@ -297,7 +297,6 @@ export function generateExcel(report: ReportData, res: any) {
           <td colspan="5" class="score">${report.overallScore} / 100</td>
         </tr>
         <tr><td colspan="7"></td></tr>
-        
         <tr>
           <th colspan="7">CATEGORICAL SUMMARY SCORES</th>
         </tr>

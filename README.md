@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./public/vantage_ai_banner.png" alt="Vantage AI Header Banner" width="100%" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin-bottom: 25px;" />
+<img src="./frontend/public/vantage_ai_banner.png" alt="Vantage AI Header Banner" width="100%" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin-bottom: 25px;" />
 
 # ⚡ Vantage AI — Website Auditor
 
@@ -76,26 +76,30 @@
 ## 📁 Project Architecture
 
 ```
-ai-website-analyzer/
-├── public/                 # Static assets & profile avatar resources
-│   ├── vantage_ai_banner.png  # Premium header graphics banner
-├── src/                    # Frontend source code
-│   ├── components/         # Dashboard & audit result panels
-│   │   ├── AdminPanel.tsx  # Server health telemetry UI
-│   │   ├── HistoryList.tsx # Audit history database records
-│   │   ├── IssueReport.tsx # Line-by-line recommendation code blocks
-│   │   └── ReportDashboard.tsx # Comprehensive speed/security analytics
-│   ├── App.tsx             # Theme states & tab controller
-│   ├── index.css           # Global glassmorphism style sheet & keyframes
-│   ├── types.ts            # Project model declarations
-│   └── main.tsx            # DOM node injection
-├── server/                 # Express REST endpoint modules
-│   ├── db.ts               # Local SQLite-mock database
-│   ├── analyzer.ts         # Technical auditing scripts
-│   └── generators.ts       # PDF, JSON, and CSV export layout compilers
-├── server.ts               # Server bootstrap entry point
-├── vite.config.ts          # Build pipeline and HMR configurations
-└── README.md               # Visual documentation
+ai-website-analyzer/ (project-root)
+├── frontend/
+│   ├── public/             # Static assets & avatar resources
+│   ├── src/                # Frontend React application source code
+│   │   ├── components/     # UI dashboards & panels
+│   │   ├── App.tsx         # App wrapper and layouts
+│   │   ├── index.css       # Styling configuration
+│   │   └── types.ts        # Common React interface definitions
+│   ├── package.json        # Frontend dependencies and dev scripts
+│   ├── tsconfig.json       # Frontend TS configuration
+│   └── vite.config.ts      # Vite dev settings & endpoint proxying
+├── backend/
+│   ├── controllers/        # Route logic functions
+│   ├── middleware/         # Express middlewares (e.g. logger)
+│   ├── models/             # Database access layers (Local DB JSON helper)
+│   ├── routes/             # Express routing mapping
+│   ├── utils/              # Heavy audit logic & report doc exports
+│   ├── types.ts            # Node.js backend typescript interfaces
+│   ├── db_data.json        # Active database JSON storage file
+│   ├── package.json        # Backend server package configuration
+│   ├── tsconfig.json       # Backend Node TS compiler settings
+│   └── server.ts           # Express listener and CORS bootstrap configuration
+├── README.md               # Monorepo setup documentation
+└── .gitignore              # Main ignore patterns
 ```
 
 ---
@@ -106,22 +110,49 @@ ai-website-analyzer/
 - **Node.js** v18+ installed on your local environment.
 - Active **Google Gemini API Key** for optimization recommendation diagnostics.
 
+---
+
 ### ⚙️ Installation & Launch
 
-1. **Install Modules**
+To run the applications in parallel, you must start the backend and frontend separately.
+
+#### 1. Launch Backend Server
+1. **Navigate to the Backend directory:**
+   ```bash
+   cd backend
+   ```
+2. **Install Backend dependencies:**
    ```bash
    npm install
    ```
-2. **Environment Variables**
-   Create a `.env.local` file in the root folder:
+3. **Configure Environment Variables:**
+   Create a `.env` file inside the `backend/` directory:
    ```env
    GEMINI_API_KEY=your_google_gemini_api_key
    ```
-3. **Boot Development Environment**
+4. **Start Backend Developer Environment:**
    ```bash
    npm run dev
    ```
-   *Vantage AI will boot automatically on [http://localhost:3000](http://localhost:3000).*
+   *The Express server will start running on [http://localhost:3000](http://localhost:3000).*
+
+---
+
+#### 2. Launch Frontend UI
+1. **Navigate to the Frontend directory (in a new shell):**
+   ```bash
+   cd frontend
+   ```
+2. **Install Frontend dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Start Frontend Developer Environment:**
+   ```bash
+   npm run dev
+   ```
+   *The React development server will start, typically on [http://localhost:5173](http://localhost:5173).*
+   *API calls to `/api` are automatically proxied to the backend server.*
 
 ---
 
@@ -131,7 +162,7 @@ ai-website-analyzer/
 <table border="0">
   <tr>
     <td align="center" width="220">
-      <img src="./public/input_file_1.png" alt="Aditya Kumar Sahoo" width="130" style="border-radius: 50%; border: 3px solid #6366f1; box-shadow: 0 4px 15px rgba(99,102,241,0.3);" />
+      <img src="./frontend/public/input_file_1.png" alt="Aditya Kumar Sahoo" width="130" style="border-radius: 50%; border: 3px solid #6366f1; box-shadow: 0 4px 15px rgba(99,102,241,0.3);" />
       <br />
       <b>Aditya Kumar Sahoo</b>
       <br />

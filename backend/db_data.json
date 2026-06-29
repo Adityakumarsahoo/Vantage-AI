@@ -1,0 +1,1047 @@
+{
+  "users": [
+    {
+      "id": "admin-user",
+      "email": "toadityakumarsahoo@gmail.com",
+      "name": "Aditya Sahoo",
+      "role": "admin",
+      "plan": "enterprise",
+      "createdAt": "2026-06-27T14:54:38.462Z"
+    }
+  ],
+  "passwords": {
+    "admin-user": "admin123"
+  },
+  "reports": [
+    {
+      "id": "rep-ee4lijxps",
+      "url": "https://sheetal.net",
+      "date": "2026-06-29T00:22:32.738Z",
+      "overallScore": 74,
+      "categories": {
+        "performance": 80,
+        "seo": 65,
+        "accessibility": 69,
+        "bestPractices": 70,
+        "security": 48,
+        "responsive": 77,
+        "codeQuality": 90,
+        "brokenLinks": 95
+      },
+      "metrics": {
+        "performance": [
+          {
+            "name": "Time to First Byte (TTFB)",
+            "value": "136 ms",
+            "score": 100,
+            "status": "good",
+            "description": "TTFB measures the delay between the request and receipt of the first byte of response."
+          },
+          {
+            "name": "First Contentful Paint (FCP)",
+            "value": "0.54s",
+            "score": 100,
+            "status": "good",
+            "description": "FCP marks the time at which the first text or image is painted."
+          },
+          {
+            "name": "Largest Contentful Paint (LCP)",
+            "value": "1.00s",
+            "score": 100,
+            "status": "good",
+            "description": "LCP marks the time at which the main content of a page has likely loaded."
+          },
+          {
+            "name": "Cumulative Layout Shift (CLS)",
+            "value": "0.119",
+            "score": 70,
+            "status": "warning",
+            "description": "CLS measures the visual stability of page content."
+          },
+          {
+            "name": "Cache Assets Policy",
+            "value": "Missing",
+            "score": 30,
+            "status": "error",
+            "description": "Serving static assets with an efficient cache policy reduces load times on repeat visits."
+          }
+        ],
+        "seo": [
+          {
+            "name": "Meta Title Tag",
+            "value": "\"FatShe&trade; Business Listing Directory\" (40 chars)",
+            "score": 100,
+            "status": "good",
+            "description": "Title elements specify the title of a web page and are critical for SEO."
+          },
+          {
+            "name": "Meta Description Tag",
+            "value": "Missing Description",
+            "score": 0,
+            "status": "error",
+            "description": "Descriptions provide brief summaries of web pages and appear in search listings."
+          },
+          {
+            "name": "H1 Headings",
+            "value": "2 H1 Tag(s)",
+            "score": 60,
+            "status": "warning",
+            "description": "A webpage should have exactly one H1 tag to establish proper document hierarchy."
+          },
+          {
+            "name": "Robots.txt file",
+            "value": "Present",
+            "score": 100,
+            "status": "good",
+            "description": "Robots.txt directs search crawler bots to crawl appropriate pages on your site."
+          }
+        ],
+        "security": [
+          {
+            "name": "HTTPS Enforcement",
+            "value": "Active (Secure)",
+            "score": 100,
+            "status": "good",
+            "description": "HTTPS encrypts data transferred between the client browser and server."
+          },
+          {
+            "name": "Content Security Policy (CSP)",
+            "value": "Missing Header",
+            "score": 20,
+            "status": "error",
+            "description": "CSP mitigates Cross-Site Scripting (XSS) and other code injection attacks."
+          },
+          {
+            "name": "HSTS Header",
+            "value": "Disabled",
+            "score": 30,
+            "status": "error",
+            "description": "Strict-Transport-Security ensures the browser only communicates over HTTPS."
+          },
+          {
+            "name": "Clickjacking Protection",
+            "value": "Missing X-Frame-Options",
+            "score": 40,
+            "status": "warning",
+            "description": "X-Frame-Options controls whether your site can be embedded in an iframe."
+          }
+        ],
+        "accessibility": [
+          {
+            "name": "Image Alt Text",
+            "value": "1/9 specified",
+            "score": 11,
+            "status": "error",
+            "description": "Every image requires descriptive Alt tags to assist visually impaired screen-reader users."
+          },
+          {
+            "name": "ARIA Roles & Landmark Attributes",
+            "value": "Found ARIA Tags",
+            "score": 100,
+            "status": "good",
+            "description": "Semantic landmarks and ARIA attributes describe functional structures to assistive technology."
+          },
+          {
+            "name": "Text Color Contrast",
+            "value": "Optimal Contrast detected",
+            "score": 95,
+            "status": "good",
+            "description": "Text colors must maintain readable contrast ratios against backgrounds."
+          }
+        ],
+        "codeQuality": [
+          {
+            "name": "DOM Elements Count",
+            "value": "479 elements",
+            "score": 100,
+            "status": "good",
+            "description": "Excessive DOM size delays parsing, increases memory overhead, and degrades render speeds."
+          },
+          {
+            "name": "Inline CSS Usage",
+            "value": "17 inline styles",
+            "score": 70,
+            "status": "warning",
+            "description": "Inline styles increase bundle sizes, cause page flicker, and violate DRY formatting."
+          },
+          {
+            "name": "Inline JS Blocks",
+            "value": "0 scripts",
+            "score": 100,
+            "status": "good",
+            "description": "Inline JavaScript blocks should be minimized and extracted to external modules to support CSP headers."
+          }
+        ]
+      },
+      "viewportScreenshots": [
+        {
+          "viewport": "Desktop (1440px)",
+          "width": 1440,
+          "height": 900,
+          "isPortrait": false,
+          "mockUrl": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+          "viewport": "Laptop (1024px)",
+          "width": 1024,
+          "height": 768,
+          "isPortrait": false,
+          "mockUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+          "viewport": "Tablet (768px)",
+          "width": 768,
+          "height": 1024,
+          "isPortrait": true,
+          "mockUrl": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+          "viewport": "Mobile Portrait (375px)",
+          "width": 375,
+          "height": 812,
+          "isPortrait": true,
+          "mockUrl": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80"
+        }
+      ],
+      "brokenLinks": [
+        {
+          "url": "https://sheetal.net/broken-asset.js",
+          "status": 404,
+          "type": "script",
+          "error": "Not Found"
+        },
+        {
+          "url": "https://unresolved-external-domain.com/style.css",
+          "status": 500,
+          "type": "stylesheet",
+          "error": "DNS Resolution Failed"
+        }
+      ],
+      "imageOptimization": [
+        {
+          "src": "https://sheetal.net/banner.jpg",
+          "size": "1.2 MB",
+          "webpSupport": false,
+          "lazyLoaded": false,
+          "dimensions": "1920x1080",
+          "saving": "920 KB (Switch to WebP)"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1551434678-e076c223a692",
+          "size": "420 KB",
+          "webpSupport": true,
+          "lazyLoaded": true,
+          "dimensions": "600x400",
+          "saving": "150 KB (Compress)"
+        }
+      ],
+      "jsAnalysis": [
+        {
+          "error": "Uncaught ReferenceError: analyticsTracker is not defined",
+          "type": "Exception",
+          "file": "analytics.js",
+          "line": 42
+        },
+        {
+          "error": "Deprecated Use of window.onload - switch to event listeners",
+          "type": "Deprecation",
+          "file": "main.js",
+          "line": 110
+        }
+      ],
+      "cssAnalysis": [
+        {
+          "issue": "Duplicate selector rule matching .btn-primary declared twice",
+          "severity": "low",
+          "selector": ".btn-primary"
+        },
+        {
+          "issue": "Unused keyframe animation block `@keyframes rotateIn`",
+          "severity": "low",
+          "selector": "@keyframes rotateIn"
+        }
+      ],
+      "htmlValidation": [
+        {
+          "message": "Attribute alt is required on <img> element",
+          "line": 31,
+          "column": 11,
+          "type": "error"
+        },
+        {
+          "message": "Inline style attributes are discouraged in modern templates",
+          "line": 12,
+          "column": 9,
+          "type": "warning"
+        }
+      ],
+      "aiRecommendations": [
+        {
+          "id": "rec-1",
+          "category": "accessibility",
+          "problem": "Image elements are missing [alt] text description values",
+          "whyItMatters": "Screen readers rely on alt descriptions to understand context and visual hierarchy.",
+          "severity": "high",
+          "scoreImpact": 15,
+          "howToFix": "Ensure all images have a descriptive alt tag, or alt=\"\" if decorative.",
+          "exampleCode": {
+            "current": "<img src=\"banner.jpg\">",
+            "correct": "<img src=\"banner.jpg\" alt=\"Interactive Company Analytics Banner\">"
+          },
+          "referenceDocs": "https://www.w3.org/WAI/tutorials/images/",
+          "priority": "high"
+        },
+        {
+          "id": "rec-2",
+          "category": "security",
+          "problem": "Missing Content Security Policy (CSP) headers",
+          "whyItMatters": "A missing CSP makes the web page vulnerable to cross-site scripting (XSS) attacks.",
+          "severity": "critical",
+          "scoreImpact": 20,
+          "howToFix": "Add Content-Security-Policy response headers specifying trusted scripts, styles, and iframe origins.",
+          "exampleCode": {
+            "current": "// Response headers missing CSP properties",
+            "correct": "Content-Security-Policy: default-src 'self'; script-src 'self' https://apis.google.com;"
+          },
+          "referenceDocs": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP",
+          "priority": "immediate"
+        },
+        {
+          "id": "rec-3",
+          "category": "seo",
+          "problem": "Heading hierarchy is non-optimal or contains multiple H1 elements",
+          "whyItMatters": "Search engines use header hierarchies to parse core topics and establish content structures.",
+          "severity": "medium",
+          "scoreImpact": 8,
+          "howToFix": "Restrict H1 tag to a single instance for the document title. Use H2 and H3 for subheaders.",
+          "exampleCode": {
+            "current": "<h1>Page Title</h1>\n<h1>Secondary Feature Title</h1>",
+            "correct": "<h1>Page Title</h1>\n<h2>Secondary Feature Title</h2>"
+          },
+          "referenceDocs": "https://developers.google.com/search/docs/crawling-indexing/heading-tags",
+          "priority": "medium"
+        }
+      ],
+      "lineByLineReport": [
+        {
+          "fileName": "index.html",
+          "url": "https://sheetal.net",
+          "lineNumber": 31,
+          "type": "html",
+          "error": "Missing Alt Attribute on Image Element",
+          "currentCode": "<img src=\"banner.jpg\">",
+          "correctCode": "<img src=\"banner.jpg\" alt=\"Main Company Banner Showcase\">",
+          "severity": "high"
+        },
+        {
+          "fileName": "index.html",
+          "url": "https://sheetal.net",
+          "lineNumber": 12,
+          "type": "html",
+          "error": "Inline CSS markup in style blocks",
+          "currentCode": "<body style=\"margin: 0; padding: 10px;\">",
+          "correctCode": "<body class=\"m-0 p-[10px]\">",
+          "severity": "medium"
+        }
+      ]
+    },
+    {
+      "id": "rep-c7qmtptyo",
+      "url": "https://example.com",
+      "date": "2026-06-28T17:20:49.826Z",
+      "overallScore": 79,
+      "categories": {
+        "performance": 80,
+        "seo": 68,
+        "accessibility": 82,
+        "bestPractices": 70,
+        "security": 48,
+        "responsive": 89,
+        "codeQuality": 100,
+        "brokenLinks": 95
+      },
+      "metrics": {
+        "performance": [
+          {
+            "name": "Time to First Byte (TTFB)",
+            "value": "34 ms",
+            "score": 100,
+            "status": "good",
+            "description": "TTFB measures the delay between the request and receipt of the first byte of response."
+          },
+          {
+            "name": "First Contentful Paint (FCP)",
+            "value": "0.14s",
+            "score": 100,
+            "status": "good",
+            "description": "FCP marks the time at which the first text or image is painted."
+          },
+          {
+            "name": "Largest Contentful Paint (LCP)",
+            "value": "0.25s",
+            "score": 100,
+            "status": "good",
+            "description": "LCP marks the time at which the main content of a page has likely loaded."
+          },
+          {
+            "name": "Cumulative Layout Shift (CLS)",
+            "value": "0.112",
+            "score": 70,
+            "status": "warning",
+            "description": "CLS measures the visual stability of page content."
+          },
+          {
+            "name": "Cache Assets Policy",
+            "value": "Missing",
+            "score": 30,
+            "status": "error",
+            "description": "Serving static assets with an efficient cache policy reduces load times on repeat visits."
+          }
+        ],
+        "seo": [
+          {
+            "name": "Meta Title Tag",
+            "value": "\"Example Domain\" (14 chars)",
+            "score": 70,
+            "status": "warning",
+            "description": "Title elements specify the title of a web page and are critical for SEO."
+          },
+          {
+            "name": "Meta Description Tag",
+            "value": "Missing Description",
+            "score": 0,
+            "status": "error",
+            "description": "Descriptions provide brief summaries of web pages and appear in search listings."
+          },
+          {
+            "name": "H1 Headings",
+            "value": "1 H1 Tag(s)",
+            "score": 100,
+            "status": "good",
+            "description": "A webpage should have exactly one H1 tag to establish proper document hierarchy."
+          },
+          {
+            "name": "Robots.txt file",
+            "value": "Present",
+            "score": 100,
+            "status": "good",
+            "description": "Robots.txt directs search crawler bots to crawl appropriate pages on your site."
+          }
+        ],
+        "security": [
+          {
+            "name": "HTTPS Enforcement",
+            "value": "Active (Secure)",
+            "score": 100,
+            "status": "good",
+            "description": "HTTPS encrypts data transferred between the client browser and server."
+          },
+          {
+            "name": "Content Security Policy (CSP)",
+            "value": "Missing Header",
+            "score": 20,
+            "status": "error",
+            "description": "CSP mitigates Cross-Site Scripting (XSS) and other code injection attacks."
+          },
+          {
+            "name": "HSTS Header",
+            "value": "Disabled",
+            "score": 30,
+            "status": "error",
+            "description": "Strict-Transport-Security ensures the browser only communicates over HTTPS."
+          },
+          {
+            "name": "Clickjacking Protection",
+            "value": "Missing X-Frame-Options",
+            "score": 40,
+            "status": "warning",
+            "description": "X-Frame-Options controls whether your site can be embedded in an iframe."
+          }
+        ],
+        "accessibility": [
+          {
+            "name": "Image Alt Text",
+            "value": "No images found",
+            "score": 100,
+            "status": "good",
+            "description": "Every image requires descriptive Alt tags to assist visually impaired screen-reader users."
+          },
+          {
+            "name": "ARIA Roles & Landmark Attributes",
+            "value": "No Landmark attributes",
+            "score": 50,
+            "status": "warning",
+            "description": "Semantic landmarks and ARIA attributes describe functional structures to assistive technology."
+          },
+          {
+            "name": "Text Color Contrast",
+            "value": "Optimal Contrast detected",
+            "score": 95,
+            "status": "good",
+            "description": "Text colors must maintain readable contrast ratios against backgrounds."
+          }
+        ],
+        "codeQuality": [
+          {
+            "name": "DOM Elements Count",
+            "value": "23 elements",
+            "score": 100,
+            "status": "good",
+            "description": "Excessive DOM size delays parsing, increases memory overhead, and degrades render speeds."
+          },
+          {
+            "name": "Inline CSS Usage",
+            "value": "0 inline styles",
+            "score": 100,
+            "status": "good",
+            "description": "Inline styles increase bundle sizes, cause page flicker, and violate DRY formatting."
+          },
+          {
+            "name": "Inline JS Blocks",
+            "value": "0 scripts",
+            "score": 100,
+            "status": "good",
+            "description": "Inline JavaScript blocks should be minimized and extracted to external modules to support CSP headers."
+          }
+        ]
+      },
+      "viewportScreenshots": [
+        {
+          "viewport": "Desktop (1440px)",
+          "width": 1440,
+          "height": 900,
+          "isPortrait": false,
+          "mockUrl": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+          "viewport": "Laptop (1024px)",
+          "width": 1024,
+          "height": 768,
+          "isPortrait": false,
+          "mockUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+          "viewport": "Tablet (768px)",
+          "width": 768,
+          "height": 1024,
+          "isPortrait": true,
+          "mockUrl": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+          "viewport": "Mobile Portrait (375px)",
+          "width": 375,
+          "height": 812,
+          "isPortrait": true,
+          "mockUrl": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80"
+        }
+      ],
+      "brokenLinks": [
+        {
+          "url": "https://example.com/broken-asset.js",
+          "status": 404,
+          "type": "script",
+          "error": "Not Found"
+        },
+        {
+          "url": "https://unresolved-external-domain.com/style.css",
+          "status": 500,
+          "type": "stylesheet",
+          "error": "DNS Resolution Failed"
+        }
+      ],
+      "imageOptimization": [
+        {
+          "src": "https://example.com/banner.jpg",
+          "size": "1.2 MB",
+          "webpSupport": false,
+          "lazyLoaded": false,
+          "dimensions": "1920x1080",
+          "saving": "920 KB (Switch to WebP)"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1551434678-e076c223a692",
+          "size": "420 KB",
+          "webpSupport": true,
+          "lazyLoaded": true,
+          "dimensions": "600x400",
+          "saving": "150 KB (Compress)"
+        }
+      ],
+      "jsAnalysis": [
+        {
+          "error": "Uncaught ReferenceError: analyticsTracker is not defined",
+          "type": "Exception",
+          "file": "analytics.js",
+          "line": 42
+        },
+        {
+          "error": "Deprecated Use of window.onload - switch to event listeners",
+          "type": "Deprecation",
+          "file": "main.js",
+          "line": 110
+        }
+      ],
+      "cssAnalysis": [
+        {
+          "issue": "Duplicate selector rule matching .btn-primary declared twice",
+          "severity": "low",
+          "selector": ".btn-primary"
+        },
+        {
+          "issue": "Unused keyframe animation block `@keyframes rotateIn`",
+          "severity": "low",
+          "selector": "@keyframes rotateIn"
+        }
+      ],
+      "htmlValidation": [
+        {
+          "message": "Attribute alt is required on <img> element",
+          "line": 31,
+          "column": 11,
+          "type": "error"
+        },
+        {
+          "message": "Inline style attributes are discouraged in modern templates",
+          "line": 12,
+          "column": 9,
+          "type": "warning"
+        }
+      ],
+      "aiRecommendations": [
+        {
+          "id": "rec-1",
+          "category": "accessibility",
+          "problem": "Image elements are missing [alt] text description values",
+          "whyItMatters": "Screen readers rely on alt descriptions to understand context and visual hierarchy.",
+          "severity": "high",
+          "scoreImpact": 15,
+          "howToFix": "Ensure all images have a descriptive alt tag, or alt=\"\" if decorative.",
+          "exampleCode": {
+            "current": "<img src=\"banner.jpg\">",
+            "correct": "<img src=\"banner.jpg\" alt=\"Interactive Company Analytics Banner\">"
+          },
+          "referenceDocs": "https://www.w3.org/WAI/tutorials/images/",
+          "priority": "high"
+        },
+        {
+          "id": "rec-2",
+          "category": "security",
+          "problem": "Missing Content Security Policy (CSP) headers",
+          "whyItMatters": "A missing CSP makes the web page vulnerable to cross-site scripting (XSS) attacks.",
+          "severity": "critical",
+          "scoreImpact": 20,
+          "howToFix": "Add Content-Security-Policy response headers specifying trusted scripts, styles, and iframe origins.",
+          "exampleCode": {
+            "current": "// Response headers missing CSP properties",
+            "correct": "Content-Security-Policy: default-src 'self'; script-src 'self' https://apis.google.com;"
+          },
+          "referenceDocs": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP",
+          "priority": "immediate"
+        },
+        {
+          "id": "rec-3",
+          "category": "seo",
+          "problem": "Heading hierarchy is non-optimal or contains multiple H1 elements",
+          "whyItMatters": "Search engines use header hierarchies to parse core topics and establish content structures.",
+          "severity": "medium",
+          "scoreImpact": 8,
+          "howToFix": "Restrict H1 tag to a single instance for the document title. Use H2 and H3 for subheaders.",
+          "exampleCode": {
+            "current": "<h1>Page Title</h1>\n<h1>Secondary Feature Title</h1>",
+            "correct": "<h1>Page Title</h1>\n<h2>Secondary Feature Title</h2>"
+          },
+          "referenceDocs": "https://developers.google.com/search/docs/crawling-indexing/heading-tags",
+          "priority": "medium"
+        }
+      ],
+      "lineByLineReport": [
+        {
+          "fileName": "index.html",
+          "url": "https://example.com",
+          "lineNumber": 31,
+          "type": "html",
+          "error": "Missing Alt Attribute on Image Element",
+          "currentCode": "<img src=\"banner.jpg\">",
+          "correctCode": "<img src=\"banner.jpg\" alt=\"Main Company Banner Showcase\">",
+          "severity": "high"
+        },
+        {
+          "fileName": "index.html",
+          "url": "https://example.com",
+          "lineNumber": 12,
+          "type": "html",
+          "error": "Inline CSS markup in style blocks",
+          "currentCode": "<body style=\"margin: 0; padding: 10px;\">",
+          "correctCode": "<body class=\"m-0 p-[10px]\">",
+          "severity": "medium"
+        }
+      ]
+    },
+    {
+      "id": "rep-bt18vvson",
+      "url": "https://www.jobleads.com/home",
+      "date": "2026-06-28T14:11:30.780Z",
+      "overallScore": 82,
+      "categories": {
+        "performance": 55,
+        "seo": 94,
+        "accessibility": 93,
+        "bestPractices": 70,
+        "security": 100,
+        "responsive": 89,
+        "codeQuality": 60,
+        "brokenLinks": 95
+      },
+      "metrics": {
+        "performance": [
+          {
+            "name": "Time to First Byte (TTFB)",
+            "value": "594 ms",
+            "score": 40,
+            "status": "error",
+            "description": "TTFB measures the delay between the request and receipt of the first byte of response."
+          },
+          {
+            "name": "First Contentful Paint (FCP)",
+            "value": "2.38s",
+            "score": 75,
+            "status": "warning",
+            "description": "FCP marks the time at which the first text or image is painted."
+          },
+          {
+            "name": "Largest Contentful Paint (LCP)",
+            "value": "4.36s",
+            "score": 30,
+            "status": "error",
+            "description": "LCP marks the time at which the main content of a page has likely loaded."
+          },
+          {
+            "name": "Cumulative Layout Shift (CLS)",
+            "value": "0.056",
+            "score": 100,
+            "status": "good",
+            "description": "CLS measures the visual stability of page content."
+          },
+          {
+            "name": "Cache Assets Policy",
+            "value": "Missing",
+            "score": 30,
+            "status": "error",
+            "description": "Serving static assets with an efficient cache policy reduces load times on repeat visits."
+          }
+        ],
+        "seo": [
+          {
+            "name": "Meta Title Tag",
+            "value": "\"Find Jobs That Fit | Build Resumes That Stand Out | JobLeads\" (60 chars)",
+            "score": 100,
+            "status": "good",
+            "description": "Title elements specify the title of a web page and are critical for SEO."
+          },
+          {
+            "name": "Meta Description Tag",
+            "value": "JobLeads: Finds jobs matched to your ski...",
+            "score": 75,
+            "status": "warning",
+            "description": "Descriptions provide brief summaries of web pages and appear in search listings."
+          },
+          {
+            "name": "H1 Headings",
+            "value": "1 H1 Tag(s)",
+            "score": 100,
+            "status": "good",
+            "description": "A webpage should have exactly one H1 tag to establish proper document hierarchy."
+          },
+          {
+            "name": "Robots.txt file",
+            "value": "Present",
+            "score": 100,
+            "status": "good",
+            "description": "Robots.txt directs search crawler bots to crawl appropriate pages on your site."
+          }
+        ],
+        "security": [
+          {
+            "name": "HTTPS Enforcement",
+            "value": "Active (Secure)",
+            "score": 100,
+            "status": "good",
+            "description": "HTTPS encrypts data transferred between the client browser and server."
+          },
+          {
+            "name": "Content Security Policy (CSP)",
+            "value": "Configured",
+            "score": 100,
+            "status": "good",
+            "description": "CSP mitigates Cross-Site Scripting (XSS) and other code injection attacks."
+          },
+          {
+            "name": "HSTS Header",
+            "value": "Enabled",
+            "score": 100,
+            "status": "good",
+            "description": "Strict-Transport-Security ensures the browser only communicates over HTTPS."
+          },
+          {
+            "name": "Clickjacking Protection",
+            "value": "Enabled",
+            "score": 100,
+            "status": "good",
+            "description": "X-Frame-Options controls whether your site can be embedded in an iframe."
+          }
+        ],
+        "accessibility": [
+          {
+            "name": "Image Alt Text",
+            "value": "38/46 specified",
+            "score": 83,
+            "status": "good",
+            "description": "Every image requires descriptive Alt tags to assist visually impaired screen-reader users."
+          },
+          {
+            "name": "ARIA Roles & Landmark Attributes",
+            "value": "Found ARIA Tags",
+            "score": 100,
+            "status": "good",
+            "description": "Semantic landmarks and ARIA attributes describe functional structures to assistive technology."
+          },
+          {
+            "name": "Text Color Contrast",
+            "value": "Optimal Contrast detected",
+            "score": 95,
+            "status": "good",
+            "description": "Text colors must maintain readable contrast ratios against backgrounds."
+          }
+        ],
+        "codeQuality": [
+          {
+            "name": "DOM Elements Count",
+            "value": "2340 elements",
+            "score": 45,
+            "status": "error",
+            "description": "Excessive DOM size delays parsing, increases memory overhead, and degrades render speeds."
+          },
+          {
+            "name": "Inline CSS Usage",
+            "value": "53 inline styles",
+            "score": 35,
+            "status": "error",
+            "description": "Inline styles increase bundle sizes, cause page flicker, and violate DRY formatting."
+          },
+          {
+            "name": "Inline JS Blocks",
+            "value": "1 scripts",
+            "score": 100,
+            "status": "good",
+            "description": "Inline JavaScript blocks should be minimized and extracted to external modules to support CSP headers."
+          }
+        ]
+      },
+      "viewportScreenshots": [
+        {
+          "viewport": "Desktop (1440px)",
+          "width": 1440,
+          "height": 900,
+          "isPortrait": false,
+          "mockUrl": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+          "viewport": "Laptop (1024px)",
+          "width": 1024,
+          "height": 768,
+          "isPortrait": false,
+          "mockUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+          "viewport": "Tablet (768px)",
+          "width": 768,
+          "height": 1024,
+          "isPortrait": true,
+          "mockUrl": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+          "viewport": "Mobile Portrait (375px)",
+          "width": 375,
+          "height": 812,
+          "isPortrait": true,
+          "mockUrl": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80"
+        }
+      ],
+      "brokenLinks": [
+        {
+          "url": "https://www.jobleads.com/home/broken-asset.js",
+          "status": 404,
+          "type": "script",
+          "error": "Not Found"
+        },
+        {
+          "url": "https://unresolved-external-domain.com/style.css",
+          "status": 500,
+          "type": "stylesheet",
+          "error": "DNS Resolution Failed"
+        }
+      ],
+      "imageOptimization": [
+        {
+          "src": "https://www.jobleads.com/home/banner.jpg",
+          "size": "1.2 MB",
+          "webpSupport": false,
+          "lazyLoaded": false,
+          "dimensions": "1920x1080",
+          "saving": "920 KB (Switch to WebP)"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1551434678-e076c223a692",
+          "size": "420 KB",
+          "webpSupport": true,
+          "lazyLoaded": true,
+          "dimensions": "600x400",
+          "saving": "150 KB (Compress)"
+        }
+      ],
+      "jsAnalysis": [
+        {
+          "error": "Uncaught ReferenceError: analyticsTracker is not defined",
+          "type": "Exception",
+          "file": "analytics.js",
+          "line": 42
+        },
+        {
+          "error": "Deprecated Use of window.onload - switch to event listeners",
+          "type": "Deprecation",
+          "file": "main.js",
+          "line": 110
+        }
+      ],
+      "cssAnalysis": [
+        {
+          "issue": "Duplicate selector rule matching .btn-primary declared twice",
+          "severity": "low",
+          "selector": ".btn-primary"
+        },
+        {
+          "issue": "Unused keyframe animation block `@keyframes rotateIn`",
+          "severity": "low",
+          "selector": "@keyframes rotateIn"
+        }
+      ],
+      "htmlValidation": [
+        {
+          "message": "Attribute alt is required on <img> element",
+          "line": 31,
+          "column": 11,
+          "type": "error"
+        },
+        {
+          "message": "Inline style attributes are discouraged in modern templates",
+          "line": 12,
+          "column": 9,
+          "type": "warning"
+        }
+      ],
+      "aiRecommendations": [
+        {
+          "id": "rec-1",
+          "category": "accessibility",
+          "problem": "Image elements are missing [alt] text description values",
+          "whyItMatters": "Screen readers rely on alt descriptions to understand context and visual hierarchy.",
+          "severity": "high",
+          "scoreImpact": 15,
+          "howToFix": "Ensure all images have a descriptive alt tag, or alt=\"\" if decorative.",
+          "exampleCode": {
+            "current": "<img src=\"banner.jpg\">",
+            "correct": "<img src=\"banner.jpg\" alt=\"Interactive Company Analytics Banner\">"
+          },
+          "referenceDocs": "https://www.w3.org/WAI/tutorials/images/",
+          "priority": "high"
+        },
+        {
+          "id": "rec-2",
+          "category": "security",
+          "problem": "Missing Content Security Policy (CSP) headers",
+          "whyItMatters": "A missing CSP makes the web page vulnerable to cross-site scripting (XSS) attacks.",
+          "severity": "critical",
+          "scoreImpact": 20,
+          "howToFix": "Add Content-Security-Policy response headers specifying trusted scripts, styles, and iframe origins.",
+          "exampleCode": {
+            "current": "// Response headers missing CSP properties",
+            "correct": "Content-Security-Policy: default-src 'self'; script-src 'self' https://apis.google.com;"
+          },
+          "referenceDocs": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP",
+          "priority": "immediate"
+        },
+        {
+          "id": "rec-3",
+          "category": "seo",
+          "problem": "Heading hierarchy is non-optimal or contains multiple H1 elements",
+          "whyItMatters": "Search engines use header hierarchies to parse core topics and establish content structures.",
+          "severity": "medium",
+          "scoreImpact": 8,
+          "howToFix": "Restrict H1 tag to a single instance for the document title. Use H2 and H3 for subheaders.",
+          "exampleCode": {
+            "current": "<h1>Page Title</h1>\n<h1>Secondary Feature Title</h1>",
+            "correct": "<h1>Page Title</h1>\n<h2>Secondary Feature Title</h2>"
+          },
+          "referenceDocs": "https://developers.google.com/search/docs/crawling-indexing/heading-tags",
+          "priority": "medium"
+        }
+      ],
+      "lineByLineReport": [
+        {
+          "fileName": "index.html",
+          "url": "https://www.jobleads.com/home",
+          "lineNumber": 31,
+          "type": "html",
+          "error": "Missing Alt Attribute on Image Element",
+          "currentCode": "<img src=\"banner.jpg\">",
+          "correctCode": "<img src=\"banner.jpg\" alt=\"Main Company Banner Showcase\">",
+          "severity": "high"
+        },
+        {
+          "fileName": "index.html",
+          "url": "https://www.jobleads.com/home",
+          "lineNumber": 12,
+          "type": "html",
+          "error": "Inline CSS markup in style blocks",
+          "currentCode": "<body style=\"margin: 0; padding: 10px;\">",
+          "correctCode": "<body class=\"m-0 p-[10px]\">",
+          "severity": "medium"
+        }
+      ]
+    }
+  ],
+  "logs": [
+    {
+      "id": "log-jyhiwm7",
+      "timestamp": "2026-06-29T00:22:36.518Z",
+      "userId": "anonymous",
+      "email": "anonymous@analyzer.com",
+      "action": "Scan Completed",
+      "details": "Analyzed website: https://sheetal.net"
+    },
+    {
+      "id": "log-rmpeqqi",
+      "timestamp": "2026-06-28T17:20:53.008Z",
+      "userId": "anonymous",
+      "email": "anonymous@analyzer.com",
+      "action": "Scan Completed",
+      "details": "Analyzed website: https://example.com"
+    },
+    {
+      "id": "log-ecknlmj",
+      "timestamp": "2026-06-28T14:11:36.453Z",
+      "userId": "anonymous",
+      "email": "anonymous@analyzer.com",
+      "action": "Scan Completed",
+      "details": "Analyzed website: https://www.jobleads.com/home"
+    },
+    {
+      "id": "log-1",
+      "timestamp": "2026-06-27T14:54:38.462Z",
+      "userId": "admin-user",
+      "email": "toadityakumarsahoo@gmail.com",
+      "action": "System Init",
+      "details": "Database initialized successfully"
+    }
+  ]
+}
